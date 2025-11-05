@@ -386,7 +386,7 @@ nav a:hover {
   padding: 10px;
   font-size: var(--text-base);
   line-height: calc(var(--spacing) * 20);
-  font-size: 50px;
+  font-size: 30px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   --tw-tracking: var(--tracking-wide);
