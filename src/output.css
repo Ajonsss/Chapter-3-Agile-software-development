@@ -313,8 +313,11 @@ nav a:hover {
 }
 .main {
   margin-inline: right-0;
+  @media (width >= 40rem) {
+    margin-inline: 10px;
+  }
   @media (width >= 48rem) {
-    margin-inline: calc(var(--spacing) * 25);
+    margin-inline: calc(var(--spacing) * 10);
   }
   @media (width >= 64rem) {
     margin-inline: calc(var(--spacing) * 40);
@@ -334,6 +337,9 @@ nav a:hover {
   padding: calc(var(--spacing) * 10);
   --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  @media (width >= 40rem) {
+    margin: calc(var(--spacing) * 3);
+  }
 }
 .grid {
   display: flex;

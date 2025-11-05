@@ -97,7 +97,8 @@ nav a:hover {
     @apply
 
     mx-[right-0]
-    md:mx-25
+    sm:mx-[10px]
+    md:mx-10
     lg:mx-40
     xl:mx-60
 }
@@ -112,6 +113,7 @@ nav a:hover {
     shadow-xl
     border-2 
     border-solid
+    sm:m-3
 }
 
 /*Index.html changes for Grid and flex (index.html)*/
