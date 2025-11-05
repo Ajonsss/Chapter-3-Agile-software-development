@@ -1,5 +1,6 @@
 /*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -19,8 +20,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-normal: 400;
@@ -208,9 +209,13 @@
 }
 :root {
   --font-BBH: "BBH Sans Hegarty", sans-serif;
+  --font-MON: "Montserrat", sans-serif;
 }
 .font-BBH {
   font-family: var(--font-BBH);
+}
+.font-MON {
+  font-family: var(--font-MON);
 }
 nav {
   top: calc(var(--spacing) * 0);
@@ -260,6 +265,7 @@ nav {
   }
 }
 nav a {
+  font-family: var(--font-MON);
   display: inline-block;
   border-radius: 9px;
   border-style: var(--tw-border-style);
@@ -306,12 +312,15 @@ nav a:hover {
   color: #E9E9E9;
 }
 .main {
-  margin-inline: 30px;
+  margin-inline: right-0;
   @media (width >= 48rem) {
     margin-inline: calc(var(--spacing) * 25);
   }
   @media (width >= 64rem) {
-    margin-inline: calc(var(--spacing) * 50);
+    margin-inline: calc(var(--spacing) * 40);
+  }
+  @media (width >= 80rem) {
+    margin-inline: calc(var(--spacing) * 60);
   }
 }
 .section {
@@ -405,6 +414,7 @@ nav a:hover {
   }
 }
 .paragraph {
+  font-family: var(--font-MON);
   max-width: fit-content;
   border-radius: 9px;
   padding-block: 10px;
@@ -433,8 +443,9 @@ nav a:hover {
   padding-block: 10px;
 }
 .titletwo {
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  font-family: var(--font-MON);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   color: #FFF0DD;
@@ -479,6 +490,7 @@ nav a:hover {
   font-style: italic;
 }
 .footer {
+  font-family: var(--font-MON);
   background-color: #061b96;
   padding: 10px;
   text-align: center;
@@ -492,7 +504,7 @@ nav a:hover {
   margin-block: calc(var(--spacing) * 8);
   transform-origin: top;
   background-color: #002DFF;
-  padding: calc(var(--spacing) * 10);
+  padding: calc(var(--spacing) * 5);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
